@@ -1,0 +1,156 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-29T07:20:55.309Z",
+        "line": 3,
+        "name": "Login with valid username and password",
+        "description": "",
+        "id": "test-login;login-with-valid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9053797901,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is at login page of newtours website",
+            "match": {
+              "location": "login.user_is_at_login_page_of_newtours_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 357341233,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters valid username",
+            "match": {
+              "location": "login.user_enters_valid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 285037309,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters valid password",
+            "match": {
+              "location": "login.user_enters_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6237280315,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks login button",
+            "match": {
+              "location": "login.user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52677445,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login should be successful",
+            "match": {
+              "location": "login.login_should_be_successful()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-29T07:21:11.466Z",
+        "line": 11,
+        "name": "Login with invalid username",
+        "description": "",
+        "id": "test-login;login-with-invalid-username",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6895497386,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is at login page of newtours website",
+            "match": {
+              "location": "login.user_is_at_login_page_of_newtours_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 316065566,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters invalid username",
+            "match": {
+              "location": "login.user_enters_invalid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 285838717,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters valid password",
+            "match": {
+              "location": "login.user_enters_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5894483578,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks login button",
+            "match": {
+              "location": "login.user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: Comparing title expected:\u003c[WelCome] Mercury Tours:\u003e but was:\u003c[Find a Flight:] Mercury Tours:\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat stepDefinition.login.login_should_not_be_successful(login.java:63)\r\n\tat ✽.Login should not be successful(file:src/test/resources/Features/login.feature:16)\r\n",
+              "duration": 50400838,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "Login should not be successful",
+            "match": {
+              "location": "login.login_should_not_be_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test login",
+    "description": "",
+    "id": "test-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  }
+]
